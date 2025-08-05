@@ -43,7 +43,7 @@ The project can be viewed by opening `index.html` in a web browser or deploying 
 
 ## **Live Demo**
 
-👉 [View Live Project](https://your-demo-link.com)
+👉 [View Live Project](https://prs-016.github.io/landing-page/)
 
 ## **Credits**
 
