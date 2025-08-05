@@ -1,0 +1,316 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo{
+    padding-left: 16px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;       
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    
+    
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-position: 80% 70%;
+  object-fit: cover;
+  transition: transform 1.75s ease;
+  flex-shrink:0;
+}
+.logo img:hover{
+    transform: scale(1.2) rotate(180deg);
+    transition: transform 0.3s ease-in, transform 2.5s ease-out;
+}
+ 
+ul{
+    display: flex;
+    padding: 16px;
+    gap:48px;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    transition: color 1s ease 0.3s;
+}
+a:hover{
+    color: black;
+}
+
+.description{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px;
+    padding: 48px;
+}
+
+.text{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 32px;
+}
+
+.heading{
+    font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 16px;
+}
+
+.subtitle{
+    font-size: 1rem;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.714);
+}
+
+.sign-up{
+    padding: 12px 24px;
+    background-color: #f70000; 
+    color: rgba(36, 36, 36, 0.766);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    cursor: pointer;
+    transition: color 2s ease, transform 0.2s ease, cursor 0.2s ease;
+}
+.sign-up:hover {
+  color: #f70000; 
+  transform: scale(1.05);    
+}
+.sign-up:active {
+  transform: scale(0.98); 
+  cursor: wait; 
+
+}
+.sign-up:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Focus ring */
+}
+
+
+.description .placeholder-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder-image img{
+    max-width: 200%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    margin:0px;
+    padding: 0px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(191, 2, 2);
+    font-family: 'Old English Text MT', sans-serif;
+    
+}
+
+.title{
+    font-size: 3rem;
+    align-self: center;
+    font-weight: bolder;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;              
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.info{
+    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.info img{
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.info .text{
+    flex: 1 1;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #4d4d4dea;
+    min-height: 20rem;
+
+}
+.quote .qt{
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    margin-top: 10rem;
+    padding-left: 5rem;
+    margin-bottom: 0px;
+    font-family: Trebuchet MS;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.quote .author{
+    flex: 1;
+    align-self: flex-end;
+    min-width: 20%;
+    padding: 10px 1rem 1rem 1rem;
+    font-family: 'Edwardian Script ITC';
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.call-to-action{
+    display: flex;
+    background-color: rgb(191, 2, 2);
+    min-height: 15rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    padding: 1rem;
+    display: flex;
+    height: 80%;
+    width: 80%;
+    background-color:#4d4d4dea;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 12px 24px;
+    background-color: #f70000; 
+    color: rgba(36, 36, 36, 0.766);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    cursor: pointer;
+    transition: color 2s ease, transform 0.2s ease, background-color 2s ease, cursor 0.1s ease;
+}
+.btn:hover {
+  color: rgb(191, 2, 2); 
+  transform: scale(1.05);  
+}
+.btn:active {
+  transform: scale(0.98);  
+  background-color: rgb(191, 2, 2);  
+  cursor: wait;
+
+}
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Focus ring */
+}
+
+.head{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin-bottom: 12px;
+}   
+
+.sub{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
+}
+
+.write{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    background-color: black;
+    color: white;
+    min-height: 5rem;
+}
+
+.copyright{
+    color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.copytext{
+    color:red
+}
+
+.github{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    object-fit: cover;       
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    margin: 0px;
+    
+    
+}
+.github img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 1.75s ease;
+  flex-shrink:0;
+}
+.github img:hover{
+    transform: scale(1.2) rotate(180deg);
+    transition: transform 0.3s ease-in, transform 2.5s ease-out;
+}
+
+
+ul{
+    list-style: none;
+}
